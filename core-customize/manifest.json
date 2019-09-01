@@ -4,7 +4,9 @@
         "modeltacceleratorservices",
         "electronicsstore",
         "yacceleratorstorefront",
-        "backoffice"
+        "concerttours",
+		"backoffice"
+		
     ],
          "aspects": [
         {
