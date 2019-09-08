@@ -144,7 +144,7 @@
                     "name": "permissionswebservices",
                     "contextPath": "/permissionswebservices"
                  }
-    },
+     },
     {
       "name": "accstorefront",
       "properties": [
