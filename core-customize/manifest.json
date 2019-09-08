@@ -3,26 +3,24 @@
     "useCloudExtensionPack": true,
     "extensions": [
         "modeltacceleratorservices",
-        "electronicsstore",
+        "SmartEdit"
+		"electronicsstore",
         "concerttours",
-	"backoffice",
+	    "backoffice",
+		"platformbackoffice",
+		"modeltacceleratorservices",
+		"yacceleratorstorefront",
+		"yacceleratorfulfilmentprocess",
         "acceleratorcms",
         "adaptivesearchbackoffice",
         "addonsupport",
-        "b2ctelcobackoffice",
-        "b2ctelcofulfillmentprocess",
-        "b2ctelcostore",
         "utilitiesstore",
         "mediastore",
-        "b2ctelcoaddon",
-        "b2ctelcooccaddon",
-        "b2ctelcotmfwebservices",
-        "b2ctelcowebservices",
         "commerceservicesbackoffice",
         "solrfacetsearchbackoffice",
+		"azurecloudhotfolder",
         "solrserver",
         "subscriptionbackoffice",
-        "yacceleratorstorefront",
         "yacceleratorcore",
         "ycommercewebservices",
         "cmsbackoffice",
@@ -49,137 +47,7 @@
         "assistedservicecustomerinterestsaddon"
     ],
 	
-    "properties": [
-    {
-      "key": "impex.import.workers",
-      "value": "1"
-    },
-	{
-      "key": "catalog.sync.workers",
-      "value": "1"
-    },
-    {
-      "key": "kernel.events.cluster.jgroups.channel",
-      "value": "disable"
-    },
-    {
-      "key": "datahub.publication.saveImpex",
-      "value": ""
-    },
-    {
-      "key": "kernel.autoInitMode",
-      "value": "update"
-    },
-    {
-      "key": "mail.from",
-      "value": "testmail9110@gmail.com"
-    },
-    {
-      "key": "mail.replyto",
-      "value": "testmail9110@gmail.com"
-    },
-    {
-      "key": "mail.smtp.server",
-      "value": "smtp.gmail.com"
-    },
-    {
-      "key": "mail.smtp.port",
-      "value": "587"
-    },
-    {
-      "key": "mail.smtp.user",
-      "value": "testmail9110@gmail.com"
-    },
-    {
-      "key": "mail.smtp.password",
-      "value": "PWD11111"
-    },
-    {
-      "key": "mail.smtp.starttls.enable",
-      "value": "true"
-    },
-    {
-      "key": "mail.use.tls",
-      "value": "true"
-    },
-    {
-      "key": "storefront.show.debug.info",
-      "value": "true"
-    },
-    {
-      "key": "commerceservices.default.desktop.ui.experience",
-      "value": "responsive"
-    },
-    {
-      "key": "googleEmbedApiKey",
-      "value": "AIzaSyD34TXbUsiyJnysJ-1Un657elxVy_OYpTs"
-    },
-    {
-      "key": "storefront.show.checkout.flows",
-      "value": "true"
-    },
-    {
-      "key" : "b2ctelcotmfwebservices.api.base.url",
-      "value" : "https://api.cwlb454z54-shpm1-s1-public.model-t.cc.commerce.ondemand.com"
-    },
-    {
-      "key":"website.b2ctelco.http",
-      "value":"http://accstorefront.cwlb454z54-shpm1-s1-public.model-t.cc.commerce.ondemand.com"
-    },
-    {
-      "key":"website.b2ctelco.https",
-      "value":"https://accstorefront.cwlb454z54-shpm1-s1-public.model-t.cc.commerce.ondemand.com"
-    },
-    {
-      "key":"website.media.http",
-      "value":"http://accstorefront.cwlb454z54-shpm1-s1-public.model-t.cc.commerce.ondemand.com"
-    },
-    {
-      "key":"website.media.https",
-      "value":"https://accstorefront.cwlb454z54-shpm1-s1-public.model-t.cc.commerce.ondemand.com"
-    },
-    {
-      "key":"website.utilities.http",
-      "value":"http://accstorefront.cwlb454z54-shpm1-s1-public.model-t.cc.commerce.ondemand.com"
-    },
-    {
-      "key":"website.utilities.https",
-      "value":"https://accstorefront.cwlb454z54-shpm1-s1-public.model-t.cc.commerce.ondemand.com"
-    }
-    ],
-
-"storefrontAddons": [
-    {
-      "addon": "b2ctelcoaddon",
-      "storefront": "yacceleratorstorefront",
-      "template": "yacceleratorstorefront"
-    },
-    {
-      "addon": "smarteditaddon",
-      "storefront": "yacceleratorstorefront",
-      "template": "yacceleratorstorefront"
-    },
-    {
-      "addon": "assistedservicestorefront",
-      "storefront": "yacceleratorstorefront",
-      "template": "yacceleratorstorefront"
-    },
-    {
-      "addon": "assistedservicecustomerinterestsaddon",
-      "storefront": "yacceleratorstorefront",
-      "template": "yacceleratorstorefront"
-    },
-    {
-      "addon": "customerticketingaddon",
-      "storefront": "yacceleratorstorefront",
-      "template": "yacceleratorstorefront"
-    },
-	{
-	  "addon": "b2ctelcooccaddon",
-      "storefront": "ycommercewebservices",
-      "template": "ycommercewebservices"
-	}
-  ],
+    
  "aspects": [
     {
       "name": "backoffice",
@@ -209,6 +77,76 @@
         }
       ]
     },
+	{
+     	"name": "api",
+         "properties": [
+                    {
+                        "key":"xss.filter.header.X-Frame-Options",
+                        "value":""
+                    },
+					{
+                        "key":"storefrontContextRoot",
+                        "value":"/yacceleratorstorefront"
+                    }
+            ],
+            "webapps": [
+                {
+                    "name": "yacceleratorstorefront",
+                    "contextPath": ""
+                },
+				{
+                     "name": "smartedit",
+                     "contextPath": "/smartedit"
+                },
+                {
+                     "name": "cmssmartedit",
+                     "contextPath": "/cmssmartedit"
+                 },
+                 {
+                     "name": "smarteditwebservices",
+                     "contextPath": "/smarteditwebservices"
+                 },
+                 {
+                     "name": "cmssmarteditwebservices",
+                     "contextPath": "/cmssmarteditwebservices"
+                 },
+                 {
+                     "name": "oauth2",
+                     "contextPath": "/authorizationserver"
+                 },
+                 {
+                     "name": "cmswebservices",
+                     "contextPath": "/cmswebservices"
+                 },
+                 {
+                     "name": "permissionswebservices",
+                     "contextPath": "/permissionswebservices"
+                 },
+                 {
+                     "name": "previewwebservices",
+                     "contextPath": "/previewwebservices"
+                 },
+                 {
+                     "name": "mediaweb",
+                     "contextPath": "/medias"
+                 },
+				{
+                    "name": "ycommercewebservices",
+                    "contextPath": "/rest"
+                },
+                {
+                    "name": "oauth2",
+                    "contextPath": "/authorizationserver"
+                },
+                {
+                    "name": "cmswebservices",
+                    "contextPath": "/cmswebservices"
+                },
+                {
+                    "name": "permissionswebservices",
+                    "contextPath": "/permissionswebservices"
+                 }
+	},
     {
       "name": "accstorefront",
       "properties": [
@@ -229,10 +167,6 @@
         {
           "name": "yacceleratorstorefront",
           "contextPath": ""
-        },
-        {
-          "name": "b2ctelcowebservices",
-          "contextPath": "/b2ctelcowebservices"
         },
         {
           "name":"oauth2",
