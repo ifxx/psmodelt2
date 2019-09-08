@@ -4,13 +4,13 @@
     "extensions": [
         "modeltacceleratorservices",
         "SmartEdit"
-		"electronicsstore",
+	"electronicsstore",
         "concerttours",
-	    "backoffice",
-		"platformbackoffice",
-		"modeltacceleratorservices",
-		"yacceleratorstorefront",
-		"yacceleratorfulfilmentprocess",
+	"backoffice",
+        "platformbackoffice",
+	"modeltacceleratorservices",
+	"yacceleratorstorefront",
+	"yacceleratorfulfilmentprocess",
         "acceleratorcms",
         "adaptivesearchbackoffice",
         "addonsupport",
@@ -18,7 +18,7 @@
         "mediastore",
         "commerceservicesbackoffice",
         "solrfacetsearchbackoffice",
-		"azurecloudhotfolder",
+	"azurecloudhotfolder",
         "solrserver",
         "subscriptionbackoffice",
         "yacceleratorcore",
@@ -46,8 +46,6 @@
         "assistedservicestorefront",
         "assistedservicecustomerinterestsaddon"
     ],
-	
-    
  "aspects": [
     {
       "name": "backoffice",
@@ -77,14 +75,14 @@
         }
       ]
     },
-	{
+    {
      	"name": "api",
          "properties": [
                     {
                         "key":"xss.filter.header.X-Frame-Options",
                         "value":""
                     },
-					{
+		    {
                         "key":"storefrontContextRoot",
                         "value":"/yacceleratorstorefront"
                     }
@@ -94,7 +92,7 @@
                     "name": "yacceleratorstorefront",
                     "contextPath": ""
                 },
-				{
+		{
                      "name": "smartedit",
                      "contextPath": "/smartedit"
                 },
@@ -130,7 +128,7 @@
                      "name": "mediaweb",
                      "contextPath": "/medias"
                  },
-				{
+		 {
                     "name": "ycommercewebservices",
                     "contextPath": "/rest"
                 },
@@ -146,7 +144,7 @@
                     "name": "permissionswebservices",
                     "contextPath": "/permissionswebservices"
                  }
-	},
+    },
     {
       "name": "accstorefront",
       "properties": [
