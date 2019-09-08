@@ -3,7 +3,7 @@
     "useCloudExtensionPack": true,
     "extensions": [
         "modeltacceleratorservices",
-        "SmartEdit"
+        "SmartEdit",
 	"electronicsstore",
         "concerttours",
 	"backoffice",
