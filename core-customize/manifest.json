@@ -1,9 +1,12 @@
 {
     "commerceSuiteVersion": "1905.6",
+    "enableImageProcessingService": true,
     "useCloudExtensionPack": true,
     "extensions": [
         "modeltacceleratorservices",
         "SmartEdit",
+	"cloudmediaconversion",
+	"mediaconversionbackoffice",
 	"electronicsstore",
         "concerttours",
 	"backoffice",
