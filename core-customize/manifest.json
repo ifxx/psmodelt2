@@ -47,6 +47,13 @@
         "assistedservicestorefront",
         "assistedservicecustomerinterestsaddon"
     ],
+ "useConfig": {
+    "properties": [
+	    { 
+              "location": "config/test.properties"
+	    }
+    ] 
+  },
  "aspects": [
     {
       "name": "backoffice",
