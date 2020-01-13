@@ -50,7 +50,7 @@
  "useConfig": {
     "properties": [
 	    { 
-              "location": "/config/test.properties"
+              "location": "config/test.properties"
 	    }
     ] 
   },
